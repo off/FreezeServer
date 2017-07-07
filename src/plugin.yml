@@ -1,6 +1,7 @@
 name: ServerFreeze
 author: Glenjendary
-main: com.glenjendary.freeze.main
+main: com.glenjendary.freeze.Main
+version: 0.1
 description: Allows you to freeze all the players on your server incase something goes wrong.
 commands:
   sfreeze:
