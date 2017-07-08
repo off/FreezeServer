@@ -4,6 +4,7 @@ package com.glenjendary.freeze;
 
 import com.glenjendary.freeze.commands.Freeze;
 import com.glenjendary.freeze.events.FreezeServer;
+import com.glenjendary.freeze.events.AuthorJoin;
 import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
@@ -35,6 +36,7 @@ public class Main extends JavaPlugin {
 
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new FreezeServer(this), this);
+        pm.registerEvents(new AuthorJoin(this), this);
 
     }
 
